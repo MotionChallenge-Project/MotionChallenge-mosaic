@@ -83,7 +83,7 @@ def main():
     for values, key in ((policy.default, 'default_joint_pos'), (policy.scale, 'action_scale'),
                         (policy.kp, 'joint_stiffness'), (policy.kd, 'joint_damping')):
         np.testing.assert_array_equal(values, np.asarray(metadata[key].split(','), dtype=np.float32))
-    world = World(root/'motion-challenge/robots/g1-29dof-cpu-v0.json')
+    world = World(root/'MotionChallenge-Core/robots/g1-29dof-cpu-v0.json')
     order = [world.joint_names.index(n) for n in policy.names]
     inverse = [policy.names.index(n) for n in world.joint_names]
     rng = np.random.default_rng(241024)

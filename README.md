@@ -16,6 +16,6 @@ MuJoCo 3.17 CPU batch; `--jobs 8` sets parallelism. Missing data and author
 weights are downloaded and SHA256-checked. Results and traces stay outside Git.
 
 Use local artifacts with `--weights PATH --data PATH --offline`.
-The root `motion-challenge` submodule owns data, physics, scoring and verification.
+The root `MotionChallenge-Core` submodule owns data, physics, scoring and verification.
 
 [Inference validation](validation/README.md) · [Native parity report](validation/native-parity.json)
