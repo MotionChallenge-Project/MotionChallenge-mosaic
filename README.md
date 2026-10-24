@@ -19,3 +19,7 @@ Use local artifacts with `--weights PATH --data PATH --offline`.
 The root `MotionChallenge-Core` submodule owns data, physics, scoring and verification.
 
 [Inference validation](validation/README.md) · [Native parity report](validation/native-parity.json)
+
+## Observation track
+
+The restricted observation track is not yet admitted for this checkpoint. [Admission and special handling](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).
