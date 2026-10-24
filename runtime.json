@@ -16,5 +16,13 @@
   "weights_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/resolve/2ab795d7420cf339bb803bfb145c18faf8137cb8/gmt.onnx",
   "source_repository": "https://github.com/BAAI-Humanoid/RobotBridge",
   "source_commit": "175287dd559c098d21b287a8a27c6bb48d4606ff",
-  "official": false
+  "official": false,
+  "default_track": "ideal-proprioception",
+  "observation_tracks": {
+    "ideal-proprioception": {
+      "entrypoint": "restricted:create",
+      "admission_record": "admission.json",
+      "admission_sha256": "dbeff0283f373b7b15224b56ad999c73fd758deefe2c9bf161f09f818d5a7610"
+    }
+  }
 }

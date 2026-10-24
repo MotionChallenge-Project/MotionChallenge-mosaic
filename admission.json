@@ -3,7 +3,7 @@
   "model": "mosaic",
   "display_name": "MOSAIC GMT",
   "state_access": "ideal-proprioceptive-no-position-v1",
-  "status": "pending_verification",
+  "status": "inference_verified",
   "checkpoint_sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
   "auxiliary_artifacts": {},
   "checkpoint_origin": {
@@ -35,8 +35,15 @@
   "actual_position_integration": "No explicit integration or odometry in the inspected deployed adapter source; blocked paths are listed separately.",
   "special_handling": "FK of allowed state at fixed synthetic origin (0,0,0); never actual measured origin.",
   "new_evaluation": {
-    "status": "not_started",
+    "status": "queued",
     "inherited_scores": false
   },
-  "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-mosaic"
+  "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-mosaic",
+  "dependency_test": {
+    "path": "validation/observation-access.json",
+    "sha256": "4e361828f9be933d45a659d7b70349e4fd6bda13e15166695ca08f78a957a531",
+    "code": "validate_observations.py",
+    "cases": 160,
+    "resets": 4
+  }
 }
