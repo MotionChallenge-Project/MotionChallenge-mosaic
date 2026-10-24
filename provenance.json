@@ -2,7 +2,7 @@
   "model": "mosaic",
   "display_name": "MOSAIC GMT",
   "submitter": "MotionChallenge",
-  "submission_type": "maintainer reproduction, not author submission",
+  "submission_type": "MotionChallenge reproduction",
   "upstream": "https://github.com/BAAI-Humanoid/MOSAIC",
   "project_url": "https://baai-humanoid.github.io/MOSAIC/",
   "source_commit": "175287dd559c098d21b287a8a27c6bb48d4606ff",
