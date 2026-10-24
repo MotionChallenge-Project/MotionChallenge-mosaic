@@ -1,0 +1,8 @@
+[project]
+name = "motion-challenge-mosaic"
+version = "0.0.1"
+requires-python = ">=3.12,<3.13"
+dependencies = ["motion-challenge"]
+
+[tool.uv.sources]
+motion-challenge = {path = "motion-challenge", editable = true}

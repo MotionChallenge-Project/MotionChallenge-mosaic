@@ -1,0 +1,34 @@
+{
+  "model": "mosaic",
+  "display_name": "MOSAIC GMT",
+  "submitter": "Motion Challenge",
+  "submission_type": "maintainer reproduction, not author submission",
+  "upstream": "https://github.com/BAAI-Humanoid/MOSAIC",
+  "project_url": "https://baai-humanoid.github.io/MOSAIC/",
+  "source_commit": "175287dd559c098d21b287a8a27c6bb48d4606ff",
+  "inference_repository": "https://github.com/BAAI-Humanoid/RobotBridge",
+  "checkpoint_sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
+  "author_inference_review": "Passed 160 states, 4 resets, 24 endpoint clamps, shuffled joint order and a common global-yaw transform; observation, action and motor target maximum absolute errors all zero.",
+  "inference_validation": "validation/native-parity.json",
+  "checkpoint_origin": {
+    "author_release_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/blob/2ab795d7420cf339bb803bfb145c18faf8137cb8/README.md",
+    "author_release_label": "MOSAIC authors",
+    "kind": "author_file",
+    "kind_label": "Author-released checkpoint",
+    "artifact_page_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/blob/2ab795d7420cf339bb803bfb145c18faf8137cb8/gmt.onnx",
+    "original_filename": "gmt.onnx",
+    "download_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/resolve/2ab795d7420cf339bb803bfb145c18faf8137cb8/gmt.onnx",
+    "sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
+    "verification": "Original general tracking ONNX; no conversion or fine-tuning.",
+    "bytes": 10020730
+  },
+  "deployment": {
+    "history": "Five samples per observation term; zero-filled new buffers; two initial observations from BaseEnv.reset and MosaicEnv.reset.",
+    "reference_timing": "At action k, reference max(k-1,0); follows observation-before-reference-increment in original step sequence.",
+    "reference_coordinates": "Common initial-reference torso XY/yaw coordinate registration for actual and reference packets; no physics or scoring coordinates changed. Only orientation enters the policy.",
+    "offline_route": "MosaicEnv, eval_mode=true, use_teleop=false, use_estimator=false, history_length=5, command_horizon=1; the released default control YAML enables teleoperation and must be explicitly disabled for offline references.",
+    "canonical_reference": "Canonical first frame is retained. No NPZ file is used; the author MotionLoader [1:] file-format slicing is not applied to the canonical benchmark trajectory.",
+    "clip_reset": "Fresh per-clip controller history, equivalent to independent author environment construction. No model resets inside a clip.",
+    "endpoint": "Hold last canonical reference, no looping."
+  }
+}

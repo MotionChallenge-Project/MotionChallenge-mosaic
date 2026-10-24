@@ -1,0 +1,20 @@
+{
+  "id": "mosaic-gmt",
+  "entrypoint": "adapter:create",
+  "control_period_s": 0.02,
+  "reference_offsets_s": [
+    -0.02
+  ],
+  "reference_history_s": 0.02,
+  "reference_preview_s": 0.0,
+  "state_access": "privileged-state-v0",
+  "action_mode": "joint-pd-feedforward",
+  "inference_config": "policy.json",
+  "inference_config_sha256": "66f14dc44b8f1560ead737acfeb848fe605fa2772c772cb66f53ca61dc1e55e4",
+  "weights": "checkpoints/gmt.onnx",
+  "weights_sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
+  "weights_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/resolve/2ab795d7420cf339bb803bfb145c18faf8137cb8/gmt.onnx",
+  "source_repository": "https://github.com/BAAI-Humanoid/RobotBridge",
+  "source_commit": "175287dd559c098d21b287a8a27c6bb48d4606ff",
+  "official": false
+}

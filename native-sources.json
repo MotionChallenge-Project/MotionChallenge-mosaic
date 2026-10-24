@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/BAAI-Humanoid/RobotBridge",
+  "commit": "175287dd559c098d21b287a8a27c6bb48d4606ff",
+  "files": {
+    "deploy/envs/mosaic.py": "0937ed83c90f32b7ea93b6c087b38996349c850c59511b375e08eef0d31e1c67",
+    "deploy/envs/base_env.py": "f0d2fa90ce257b2b9612bad69ebaefdf7ce39c5d16d89c69d95a775c92e9a39f",
+    "deploy/utils/dataset.py": "70b518b961191f96ef459c44ca7bd759f95f6aeed2bde9740bfe30b5344a2fad",
+    "deploy/utils/transformation.py": "598f69bcced842385ac8a5a0b355b48768bc9a09e6cce702f5fb9e9a790e2183",
+    "deploy/utils/dof.py": "b39ab1b937916a0c3d7abc8c219f83a672702d225cad4664d8a3d6e2d1eeb8a7",
+    "deploy/config/eval.yaml": "63fb3afb491248736415a8960fa09169146e1a514457ad4a7fffd503d67de37c",
+    "deploy/config/mimic/eval.yaml": "b72d7daba827a76592c005e1fccb8aa1d47a21b43227e5863e07217f940638cd",
+    "deploy/config/control/g1_29dof.yaml": "b31adae3cd5e61d4d8c8db4e873b16aedfb1169fbac1839029e2b41e8e7e9240"
+  }
+}
