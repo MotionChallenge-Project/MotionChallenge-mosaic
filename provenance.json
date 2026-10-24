@@ -8,7 +8,7 @@
   "source_commit": "175287dd559c098d21b287a8a27c6bb48d4606ff",
   "inference_repository": "https://github.com/BAAI-Humanoid/RobotBridge",
   "checkpoint_sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
-  "author_inference_review": "Passed 160 states, 4 resets, 24 endpoint clamps, shuffled joint order and a common global-yaw transform; observation, action and motor target maximum absolute errors all zero.",
+  "author_inference_review": "Numerical comparison against pinned author inference: validation/native-parity.json",
   "inference_validation": "validation/native-parity.json",
   "checkpoint_origin": {
     "author_release_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/blob/2ab795d7420cf339bb803bfb145c18faf8137cb8/README.md",
