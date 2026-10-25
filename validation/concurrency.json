@@ -1,0 +1,100 @@
+{
+  "schema": "MotionChallenge/inference-concurrency-v1",
+  "core": "da0aec4023bbc3d29be67e1fce9fa9ab8a48c4b5",
+  "inference": {
+    "model": "mosaic",
+    "scope": "40 real LAFAN initial states, six advancing reference steps, two independent resets, reordered slots, partial reset; exact original frozen inference comparison",
+    "baseline_adapter": "https://github.com/MotionChallenge-Project/MotionChallenge-mosaic/tree/2599069bc7a9cbebd88915c9f4d28e76e20dd8d4",
+    "candidate_source_sha256": {
+      "adapter.py": "f760474840f7b9b8880aa9fdd710d75698e91e17544a46a0370ca736fff04fb9",
+      "parallel.py": "24f5d3b68572d209c8570f8e346ad63b158aac17a86950aebf49c397d2d234fc",
+      "validate_observations.py": "ea48f04a1888fd6b25474156259272f3b101039d689849e9a232e959948057ef",
+      "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+      "validate_inference.py": "d1f330ff6c76dd44a83d9210e0d1ff4aa4bff42f2f69fcc291485df0b2d05cd5",
+      "restricted.py": "8f8fdcc4dc41813cf5d8f8c55e4b219310145f74a540457b52c41843a49bd831"
+    },
+    "checkpoint_sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
+    "records": [
+      {
+        "workers": 1,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.21991357952356339,
+          0.19743972644209862
+        ],
+        "median_40_calls_s": 0.034779442163805165
+      },
+      {
+        "workers": 2,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.12944528087973595,
+          0.13095717132091522
+        ],
+        "median_40_calls_s": 0.021700204350054264
+      },
+      {
+        "workers": 4,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.143348328769207,
+          0.1432354673743248
+        ],
+        "median_40_calls_s": 0.023881983011960983
+      },
+      {
+        "workers": 8,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.14597246050834656,
+          0.14400200173258781
+        ],
+        "median_40_calls_s": 0.024164538520077865
+      },
+      {
+        "workers": 16,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.15634038671851158,
+          0.14753611758351326
+        ],
+        "median_40_calls_s": 0.025323042025168736
+      },
+      {
+        "workers": 32,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.15325668454170227,
+          0.1525886282324791
+        ],
+        "median_40_calls_s": 0.025487109397848446
+      }
+    ],
+    "partial_reset_exact": true,
+    "passed": true,
+    "selected_workers": 2,
+    "selected_speedup": 1.6027241772826069
+  },
+  "closed_loop": {
+    "model": "mosaic",
+    "passed": true,
+    "scope": "all40 clips, first2 seconds, physics feedback, exact pose and metric comparison against frozen formal source",
+    "pose_samples": 4000,
+    "seconds": {
+      "baseline": 7.395110905170441,
+      "candidate": 6.235265698283911
+    },
+    "speedup": 1.1860137583560788,
+    "workers": 2,
+    "physical_cpus": "96,98,100,102,104,106,108,110",
+    "effective_scalar_workers": 2,
+    "baseline_result_sha256": "06f10e8a05709061ae4183ca223dca836be88dc2af1a4c2485480dc81838cdcc",
+    "candidate_result_sha256": "4c3622af30c2e76bcf9ff316fd120688ca1c4057991dfcc6bd15ac661f17b89a"
+  }
+}
