@@ -1,0 +1,26 @@
+{
+  "state_access": "proprioceptive-no-position-no-linear-velocity-v1",
+  "checkpoint_sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
+  "status": "inference_verified",
+  "reason": "Strict observations, original inference parity and full-batch checks passed.",
+  "schema": "MotionChallenge/observation-admission-v1",
+  "model": "mosaic",
+  "evidence_sha256": {
+    "validation/tensor-observation-parity.json": "1ed4be1360be7967121cc7f0fd8c35d2ea537a3b417dbb3bf4ff9eda3d43c009",
+    "validation/full-batch-parity.json": "e51ef42f738c13daa4ee981b8d2e01576cd34cff62bf57b9a208f1b3e7af3178",
+    "validation/mjwarp-network-parity.json": "00756f94c29fee4604366a8ce4d1b5de7a6629b7ea721c41d43785f3b74cda67"
+  },
+  "production_source_sha256": {
+    "adapter.py": "f760474840f7b9b8880aa9fdd710d75698e91e17544a46a0370ca736fff04fb9",
+    "parallel.py": "24f5d3b68572d209c8570f8e346ad63b158aac17a86950aebf49c397d2d234fc",
+    "convert_weights.py": "3ba1c3820e4d07be37e0cd367fde069fd6cb57fc2a2a15bf8bf4fa410c9a05a6",
+    "validate_tensor.py": "c215aa633d6ba943f083a155a059c5e4432942264e0cfff5dd50b479d459654e",
+    "validate_observations.py": "ea48f04a1888fd6b25474156259272f3b101039d689849e9a232e959948057ef",
+    "evaluate.py": "f89bd2cf0333e7f5639431d6976253da3ad6ef8d490340362f4b4630d533d071",
+    "validate_inference.py": "d1f330ff6c76dd44a83d9210e0d1ff4aa4bff42f2f69fcc291485df0b2d05cd5",
+    "restricted.py": "8f8fdcc4dc41813cf5d8f8c55e4b219310145f74a540457b52c41843a49bd831",
+    "validate_adapter_batch.py": "fa081b8130f25ff95481dde6e064150500b1c49b71900d5d54961f1d17bd59ce",
+    "tensor_adapter.py": "5fdfe86aa8466522691b519b1b28e2772e78758188d3751fe069fc36719211c6"
+  },
+  "dataset_evaluation": "Full-suite rollout, independent trace verification and reproduction are recorded separately."
+}

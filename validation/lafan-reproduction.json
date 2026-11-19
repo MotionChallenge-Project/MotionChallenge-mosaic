@@ -1,0 +1,49 @@
+{
+  "status": "pipeline_reproduction_passed",
+  "first_result_sha256": "94d7d454c76b8a35661b91b49b33fca357a21eaeb2233408a499f71a947cb583",
+  "second_result_sha256": "db0b143ef1626c143646eea088ba90326d0c31cc438b5c4c3419e435b1339f24",
+  "clips": 40,
+  "same_pipeline_identity": true,
+  "both_independently_trace_verified": true,
+  "summary_delta_second_minus_first": {
+    "success_count": -2,
+    "completion": -0.0036553976717957903,
+    "full": {
+      "mpjpe_world_m": 0.12194911537639674,
+      "mpjpe_xy_aligned_m": 0.0130797874925358,
+      "mpjpe_xy_yaw_aligned_m": 0.011825523919003156,
+      "joint_mae_rad": 0.008750940168093357,
+      "anchor_height_error_m": 0.01211090462822248,
+      "anchor_gravity_z_error": 0.022735657108271023
+    },
+    "prefix": {
+      "mpjpe_world_m": 0.05205402851279328,
+      "mpjpe_xy_aligned_m": 0.000928789987494516,
+      "mpjpe_xy_yaw_aligned_m": 0.0007250880769482521,
+      "joint_mae_rad": 0.0015813422986017123,
+      "anchor_height_error_m": 0.0004937194746872445,
+      "anchor_gravity_z_error": 0.0005953814349539885
+    }
+  },
+  "max_per_motion_abs_difference": {
+    "completion": 0.741683569979716,
+    "full.mpjpe_world_m": 8.935542407437218,
+    "full.mpjpe_xy_aligned_m": 0.4627713488142018,
+    "full.mpjpe_xy_yaw_aligned_m": 0.4345298219925664,
+    "full.joint_mae_rad": 0.27534021201482684,
+    "full.anchor_height_error_m": 0.4595892196863998,
+    "full.anchor_gravity_z_error": 0.7998271872536917,
+    "prefix.mpjpe_world_m": 2.175983069951444,
+    "prefix.mpjpe_xy_aligned_m": 0.022776280060403935,
+    "prefix.mpjpe_xy_yaw_aligned_m": 0.016730332524625288,
+    "prefix.joint_mae_rad": 0.04237719727468289,
+    "prefix.anchor_height_error_m": 0.010928645124823182,
+    "prefix.anchor_gravity_z_error": 0.009453809175690837
+  },
+  "changed_success_motions": [
+    "g1/dance1_subject2.csv",
+    "g1/dance2_subject2.csv"
+  ],
+  "numerically_identical_metrics": false,
+  "scope": "Complete pipeline reproduction with matching data, model, physics and rollout code; numerical differences are reported separately."
+}

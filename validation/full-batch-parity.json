@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "batch": 4096,
+  "forward_batches": [
+    4096,
+    4096,
+    4096,
+    4096
+  ],
+  "steps": 4,
+  "partial_reset_slots": [
+    1,
+    4095
+  ],
+  "partial_reset_step": 2,
+  "independent_slots": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    4095
+  ],
+  "max_pd_abs_error": 4.291534423828125e-06,
+  "act_ms": [
+    69.96553802490234,
+    6.514304161071777,
+    5.827136039733887,
+    5.745823860168457
+  ]
+}

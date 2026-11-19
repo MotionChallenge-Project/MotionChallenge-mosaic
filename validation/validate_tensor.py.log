@@ -1,0 +1,3 @@
+/mnt/volumes/nexus-train-bd-ga/swd/seed/.venv/lib/python3.12/site-packages/onnx/reference/ops/op_elu.py:14: RuntimeWarning: overflow encountered in exp
+  return (np.where(x > 0, x, alpha * (np.exp(x) - 1)).astype(x.dtype),)
+{"status": "passed", "steps": 24, "batch": 7, "partial_reset_slots": [1, 4], "partial_reset_step": 11, "observation_max_abs_error": 0.0, "network_max_abs_error": 1.33514404296875e-05}

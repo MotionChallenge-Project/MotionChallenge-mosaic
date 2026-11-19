@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "steps": 24,
+  "batch": 7,
+  "partial_reset_slots": [
+    1,
+    4
+  ],
+  "partial_reset_step": 11,
+  "observation_max_abs_error": 0.0,
+  "network_max_abs_error": 1.33514404296875e-05
+}
