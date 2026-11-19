@@ -1,0 +1,9 @@
+{
+  "status": "author_release_verified",
+  "sha256": "d6e124126a1b3e4fd3cc75e820fc0a4e170aa66ab297290fa1a3f1495fa07f3d",
+  "author_release_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/blob/2ab795d7420cf339bb803bfb145c18faf8137cb8/README.md",
+  "artifact_url": "https://huggingface.co/BAAI-Humanoid/MOSAIC_Model/resolve/2ab795d7420cf339bb803bfb145c18faf8137cb8/gmt.onnx",
+  "original_filename": "gmt.onnx",
+  "verification_scope": "Original general tracking ONNX; no conversion or fine-tuning.",
+  "upstream_source_commit": "175287dd559c098d21b287a8a27c6bb48d4606ff"
+}

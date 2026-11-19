@@ -1,0 +1,54 @@
+{
+  "status": "independent_cache_pipeline_passed",
+  "dataset": "seed",
+  "original_motion_archive_sha256": "52580ea8bced72ea9e2ff1e7b68f01c51c7f1099581e9a46b7c87e1dec106d8a",
+  "clips": 129561,
+  "independent_model_checkout": "362287f2a306a5fc2532bc5c6e542f3a25810403",
+  "core_commit": "dbe13af14b4da5670590852b20e75fbcd509c413",
+  "independent_locked_environment": true,
+  "converted_cache_initially_empty": true,
+  "prepared_motion_and_scoring_cache_reused": true,
+  "original_weights_pre_downloaded_and_hash_verified": true,
+  "offline": true,
+  "converted_artifact_sha256": {
+    "graph.json": "a1349cda7c83d34e98dea07dbe28eeb317874a7fc330ddfb5121662c5140c60c",
+    "weights.safetensors": "d663ba24fcea60758fbb0c05872448cb0db4c91e01b54b7290f5332828ea252e",
+    "conversion-receipt.json": "a64f13b81542bc863b1df4487850702f09c3822be03a8a830c7a8c8400e88eca",
+    "parity.json": "e309a9aebd48290e4e13d2b3e473bde0a7329fb61bd96c538e2896119ebf0d40"
+  },
+  "same_converted_graph_and_weights_as_primary": {
+    "graph.json": true,
+    "weights.safetensors": true
+  },
+  "result_sha256": "c8d4773f7327be3fcc3dd48756ca73b5ed5261665b19df11e0bebc1b44575b61",
+  "summary": {
+    "success_count": 127386,
+    "completion": 0.9914578641033631,
+    "full": {
+      "mpjpe_world_m": 0.21138526498448187,
+      "mpjpe_xy_aligned_m": 0.047651505022790065,
+      "mpjpe_xy_yaw_aligned_m": 0.046879117427173884,
+      "joint_mae_rad": 0.1244135431521897,
+      "anchor_height_error_m": 0.01833014966290591,
+      "anchor_gravity_z_error": 0.01935661389569648
+    },
+    "prefix": {
+      "mpjpe_world_m": 0.20173636520356988,
+      "mpjpe_xy_aligned_m": 0.04479919460660292,
+      "mpjpe_xy_yaw_aligned_m": 0.04405138036753244,
+      "joint_mae_rad": 0.12243197848301887,
+      "anchor_height_error_m": 0.0156518379384511,
+      "anchor_gravity_z_error": 0.013727203673216417
+    }
+  },
+  "verification": {
+    "verification": "independent_cpu_trace_recomputation_passed",
+    "clips": 129561,
+    "verifier_sha256": "822098272459bd44d65eb365cb0df9a5f3492410f63ab11cf055669b3a52237a",
+    "max_metric_abs_error": 4.390167246404175e-08,
+    "result_sha256": "c8d4773f7327be3fcc3dd48756ca73b5ed5261665b19df11e0bebc1b44575b61",
+    "scope": "Trace consistency only; a separate clean rerun is still required"
+  },
+  "command": "uv run --locked python evaluate.py --dataset seed --data /data/seed/g1.tar.gz --weights /cache/original/policy.onnx --offline --cache /cache/mosaic-independent --output results/seed --device cuda:0 --verify-jobs 4",
+  "scope": "Independent repository, dependency environment and empty conversion cache; complete original SEED evaluation and CPU trace verification. Prepared data cache was reused. This is a pipeline reproduction, not a claim of bitwise-identical repeated simulation."
+}

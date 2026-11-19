@@ -40,3 +40,9 @@ uv run --locked motionchallenge-reproduce results/lafan results/lafan-repeat --o
 ~~~
 
 Each result binds the protocol, data, weights, adapter, simulator and recorded trajectories. Reproduction reports pipeline identity and numerical differences separately. The pinned MotionChallenge-Core submodule supplies preparation, simulation, scoring and verification.
+
+<!-- evaluation-evidence -->
+
+[LAFAN full evaluation](validation/lafan-evaluation.json) · [SEED full evaluation](validation/seed-evaluation.json) · [LAFAN pipeline reproduction](validation/lafan-reproduction.json)
+
+[Independent original-SEED one-command run](validation/seed-one-command.json)
