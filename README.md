@@ -30,6 +30,8 @@ Policy observations exclude actual global position and actual linear velocity in
 
 All motions run to the endpoint. Results include success, completion and full-motion/prefix tracking metrics. Numerical simulation failures do not produce a full-suite ranked score.
 
+BONES-SEED evaluation uses a feasibility-filtered subset of the original G1 motion data. Download the original archive; Core applies one public inclusion list of 129,561 motions shared by every model.
+
 ## Validation
 
 [Admission](admission.mjwarp.json) · [Native inference](validation/native-parity.json) · [Tensor observations](validation/tensor-observation-parity.json) · [Full batch](validation/full-batch-parity.json)
@@ -46,3 +48,9 @@ Each result binds the protocol, data, weights, adapter, simulator and recorded t
 [LAFAN full evaluation](validation/lafan-evaluation.json) · [SEED full evaluation](validation/seed-evaluation.json) · [LAFAN pipeline reproduction](validation/lafan-reproduction.json)
 
 [Independent original-SEED one-command run](validation/seed-one-command.json)
+
+<!-- current-evaluation-evidence -->
+
+## Current evaluation evidence
+
+[LAFAN1 full evaluation](validation/lafan-evaluation.json) · [BONES-SEED full evaluation](validation/seed-evaluation.json)
