@@ -25,17 +25,17 @@
     "success_count": 127386,
     "completion": 0.9914578641033631,
     "full": {
-      "mpjpe_world_m": 0.21138526498448187,
-      "mpjpe_xy_aligned_m": 0.047651505022790065,
-      "mpjpe_xy_yaw_aligned_m": 0.046879117427173884,
+      "mpkpe_world_m": 0.21138526498448187,
+      "mpkpe_xy_aligned_m": 0.047651505022790065,
+      "mpkpe_xy_yaw_aligned_m": 0.046879117427173884,
       "joint_mae_rad": 0.1244135431521897,
       "anchor_height_error_m": 0.01833014966290591,
       "anchor_gravity_z_error": 0.01935661389569648
     },
     "prefix": {
-      "mpjpe_world_m": 0.20173636520356988,
-      "mpjpe_xy_aligned_m": 0.04479919460660292,
-      "mpjpe_xy_yaw_aligned_m": 0.04405138036753244,
+      "mpkpe_world_m": 0.20173636520356988,
+      "mpkpe_xy_aligned_m": 0.04479919460660292,
+      "mpkpe_xy_yaw_aligned_m": 0.04405138036753244,
       "joint_mae_rad": 0.12243197848301887,
       "anchor_height_error_m": 0.0156518379384511,
       "anchor_gravity_z_error": 0.013727203673216417
